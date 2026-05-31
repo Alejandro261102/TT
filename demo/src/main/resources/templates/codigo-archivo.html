@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Desbloqueo de Archivo</title>
+</head>
+<body style="margin:0;padding:0;background-color:#131924;color:#ffffff;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#131924;padding:40px 0;">
+    <tr>
+        <td align="center">
+            <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;border-radius:16px;overflow:hidden;background-color:#1D263C;border:1px solid #0a3fff;box-shadow:0 0 20px rgba(10, 63, 255, 0.25);">
+                <tr>
+                    <td style="background-color:#0a3fff;padding:30px 20px;text-align:center;">
+                        <h1 style="margin:0;color:#ffffff;font-size:24px;font-weight:700;">Desbloqueo Seguro</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:40px 30px;">
+                        <p style="margin:0 0 15px;font-size:16px;color:#ffffff;">Hola <span th:text="${nombre}">Usuario</span>,</p>
+                        <p style="margin:0 0 25px;font-size:15px;color:#A0ABC0;line-height:1.6;" th:text="${messageIntro}">Recibimos una solicitud para desbloquear el archivo. Este es tu token de acceso.</p>
+                        
+                        <div style="background-color:rgba(10, 63, 255, 0.05);border:2px dashed #0a3fff;border-radius:12px;padding:25px;text-align:center;margin-bottom:25px;">
+                            <p style="margin:0;font-size:36px;letter-spacing:8px;color:#0a3fff;font-weight:700;" th:text="${code}">000000</p>
+                        </div>
+                        
+                        <p style="margin:0 0 10px;font-size:14px;color:#A0ABC0;text-align:center;">Ingresa este token en la plataforma para descifrar el documento.</p>
+                        <p style="margin:0;font-size:13px;color:#888888;line-height:1.5;text-align:center;">Recuerda que este token es de un solo uso y expirará pronto.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgba(0,0,0,0.2);padding:20px;text-align:center;border-top:1px solid rgba(255,255,255,0.05);">
+                        <p style="margin:0;font-size:12px;color:#888888;">Plataforma de Transferencia Segura • Cifrado AES-256</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
